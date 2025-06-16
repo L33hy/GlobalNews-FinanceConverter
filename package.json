@@ -1,0 +1,46 @@
+{
+  "name": "globalnews-financeconverter",
+  "version": "2.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build --emptyOutDir",
+    "lint": "eslint . --ext .js",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{html,css,js,json}\"",
+    "test": "jest",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/L33hy/GlobalNews-FinanceConverter.git"
+  },
+  "keywords": [],
+  "author": "Lehi Ita Daniel",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-import": "^2.29.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5",
+    "vite": "^5.4.19"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/L33hy/GlobalNews-FinanceConverter/issues"
+  },
+  "browserslist": [
+    "last 3 and_chr versions",
+    "last 3 chrome versions",
+    "last 3 opera versions",
+    "last 3 ios_saf versions",
+    "last 3 safari versions"
+  ],
+  "homepage": "https://github.com/L33hy/GlobalNews-FinanceConverter#readme",
+  "description": "A web platform for financial news and currency conversion."
+}
