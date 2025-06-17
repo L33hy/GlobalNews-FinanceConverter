@@ -54,7 +54,7 @@ export function initNavigation() {
 }
 
 /**
- * Handles the logic for the first-visit modal dialog.
+ * Handles the logic for the modal dialog.
  */
 export function handleFirstVisitModal() {
     const modal = document.getElementById("visitor-modal");
@@ -72,15 +72,11 @@ export function handleFirstVisitModal() {
         overlay.classList.remove("active");
         modal.classList.remove("active");
         document.body.classList.remove("modal-active");
-        // Mark as visited so it doesn't show again
-        localStorage.setItem("hasVisited", "true");
     };
 
-    // Check if the user is a first-time visitor
-    if (!localStorage.getItem("hasVisited")) {
-        // Use a short delay to let the page load before showing the modal
-        setTimeout(openModal, 1500);
-    }
+    // Show the modal on every visit after a short delay.
+    // The check for 'hasVisited' in localStorage has been removed.
+    setTimeout(openModal, 1500);
 
     // Event listeners
     closeModalBtn.addEventListener("click", closeModal);
