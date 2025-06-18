@@ -2,6 +2,7 @@
  * Handles the single-page application (SPA) style navigation.
  * Shows/hides sections based on the URL hash.
  */
+import { loadTeamMembers } from "./api/aboutService.js";
 export function initNavigation() {
     const navLinks = document.querySelectorAll(".nav-link");
     const sections = document.querySelectorAll(".section");
@@ -10,11 +11,16 @@ export function initNavigation() {
 
     const navigateTo = (hash) => {
         const targetHash = hash || "#home"; // Default to home
+        const sectionId = `${targetHash.substring(1)}-section`; // Convert #home to home-section
 
         // Handle section visibility
         sections.forEach(section => {
-            if (`#${section.id.replace("-section", "")}` === targetHash) {
+            if (section.id === sectionId) {
                 section.classList.add("active");
+                // *** IMPORTANT: Call loadTeamMembers if navigating to the About Us section ***
+                if (targetHash === "#about") {
+                    loadTeamMembers(); 
+                }              
             } else {
                 section.classList.remove("active");
             }
@@ -84,6 +90,7 @@ export function handleFirstVisitModal() {
     visitorForm.addEventListener("submit", (e) => {
         e.preventDefault();
         // Here you would normally send the data to a server
+        // eslint-disable-next-line no-console
         console.log("Form submitted. Data:", {
             name: e.target.name.value,
             email: e.target.email.value,
@@ -101,7 +108,7 @@ export function displayLastModified() {
     if (lastModifiedElem) {
         const lastModifiedDate = new Date(document.lastModified);
         lastModifiedElem.textContent = `Last Updated: ${lastModifiedDate.toLocaleDateString("en-US", {
-            year: 'numeric', month: 'long', day: 'numeric'
+            year: "numeric", month: "long", day: "numeric"
         })}`;
     }
 }
