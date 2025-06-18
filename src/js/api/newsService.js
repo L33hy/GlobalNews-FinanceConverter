@@ -1,6 +1,4 @@
 // --- IMPORTANT ---
-// Replace with your own free API key from https://gnews.io/
-// The key 'aacd34df791587245ed2a2fbf7eb0f3b' is assumed to be your GNews API key.
 // For production, use environment variables.
 const NEWS_API_KEY = "aacd34df791587245ed2a2fbf7eb0f3b";
 

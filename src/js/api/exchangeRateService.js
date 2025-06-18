@@ -1,5 +1,4 @@
 // --- IMPORTANT ---
-// Replace with your own free API key from https://www.exchangerate-api.com/
 // For production, use environment variables.
 const EXCHANGE_RATE_API_KEY = "2ff00b7f40e6e5aa85f509fa";
 
