@@ -42,6 +42,7 @@ async function fetchNews(category = "business", query = "") {
     const data = await response.json();
     displayNews(data.articles);
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.error("Failed to fetch news:", error);
     newsGrid.innerHTML = `<p>Failed to load news. Please try again later. Error: ${error.message}</p>`;
   } finally {
