@@ -9,7 +9,7 @@ export async function loadTeamMembers() {
     teamContainer.innerHTML = ""; 
 
     try {
-        const response = await fetch("/public/employees.json");
+        const response = await fetch("/employees.json");
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
