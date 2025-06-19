@@ -24,7 +24,7 @@
     "eslint-plugin-import": "^2.29.1",
     "jest": "^29.7.0",
     "prettier": "^3.2.5",
-    "vite": "^5.4.19"
+    "vite": "^6.3.5"
   },
   "babel": {
     "presets": [
@@ -41,6 +41,6 @@
     "last 3 ios_saf versions",
     "last 3 safari versions"
   ],
-  "homepage": "https://github.com/L33hy/GlobalNews-FinanceConverter#readme",
+  "homepage": "https://github.com/L33hy/GlobalNews-FinanceConverter#home",
   "description": "A web platform for financial news and currency conversion."
 }

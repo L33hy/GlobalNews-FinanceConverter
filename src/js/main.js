@@ -7,7 +7,11 @@ import {
   initConverter,
   handleConverterControls,
 } from "./api/exchangeRateService.js";
-import { initNavigation, handleFirstVisitModal, displayLastModified } from "./ui.js";
+import {
+  initNavigation,
+  handleFirstVisitModal,
+  displayLastModified,
+} from "./ui.js";
 import { loadTeamMembers, initAbout } from "./api/aboutService.js"; // Import new aboutService
 
 /**

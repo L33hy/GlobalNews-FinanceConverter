@@ -1,186 +1,269 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Global Finance News & Converter - Your one-stop hub for the latest financial news and real-time currency conversion.">
-    <meta name="keywords" content="finance, news, currency converter, exchange rates, stocks, economics, financial markets">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Global Finance News & Converter - Your one-stop hub for the latest financial news and real-time currency conversion."
+    />
+    <meta
+      name="keywords"
+      content="finance, news, currency converter, exchange rates, stocks, economics, financial markets"
+    />
     <title>Global Finance News & Converter</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Modal for first-time visitors -->
     <div class="modal-overlay" id="visitor-modal-overlay"></div>
     <div class="modal" id="visitor-modal">
-        <div class="modal-content">
-            <button class="close-modal" id="close-visitor-modal" aria-label="Close dialog">&times;</button>
-            <h3>Welcome to Global Finance!</h3>
-            <p>Subscribe to our newsletter for the latest market insights.</p>
-            <form id="visitor-form">
-                <div class="form-group">
-                    <label for="visitor-name">Name</label>
-                    <input type="text" id="visitor-name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="visitor-email">Email</label>
-                    <input type="email" id="visitor-email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="visitor-phone">Phone (Optional)</label>
-                    <input type="tel" id="visitor-phone" name="phone">
-                </div>
-                <button type="submit" class="btn btn-primary">Subscribe</button>
-            </form>
-        </div>
+      <div class="modal-content">
+        <button
+          class="close-modal"
+          id="close-visitor-modal"
+          aria-label="Close dialog"
+        >
+          &times;
+        </button>
+        <h3>Welcome to Global Finance!</h3>
+        <p>Subscribe to our newsletter for the latest market insights.</p>
+        <form id="visitor-form">
+          <div class="form-group">
+            <label for="visitor-name">Name</label>
+            <input type="text" id="visitor-name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="visitor-email">Email</label>
+            <input type="email" id="visitor-email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="visitor-phone">Phone (Optional)</label>
+            <input type="tel" id="visitor-phone" name="phone" />
+          </div>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
     </div>
 
     <header>
-        <div class="container">
-            <a href="#home" class="logo nav-link">GlobalFinance</a>
-            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
-            <nav>
-                <ul>
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#news" class="nav-link">News</a></li>
-                    <li><a href="#converter" class="nav-link">Converter</a></li>
-                    <li><a href="#about" class="nav-link">About Us</a></li>
-                    <li><a href="#contact" class="nav-link">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <a href="#home" class="logo nav-link">GlobalFinance</a>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          &#9776;
+        </button>
+        <nav>
+          <ul>
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#news" class="nav-link">News</a></li>
+            <li><a href="#converter" class="nav-link">Converter</a></li>
+            <li><a href="#about" class="nav-link">About Us</a></li>
+            <li><a href="#contact" class="nav-link">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <!-- Home Section (New Landing Page) -->
-        <section id="home-section" class="section">
-            <div class="hero">
-                <div class="container">
-                    <h1>Your Gateway to Global Markets</h1>
-                    <p class="subtitle">Stay ahead with real-time financial news and instant currency conversions at your fingertips.</p>
-                    <div class="cta-buttons">
-                        <a href="#news" class="btn btn-primary nav-link">Read Latest News</a>
-                        <a href="#converter" class="btn btn-secondary nav-link">Use Converter</a>
-                    </div>
-                </div>
+      <!-- Home Section (New Landing Page) -->
+      <section id="home-section" class="section">
+        <div class="hero">
+          <div class="container">
+            <h1>Your Gateway to Global Markets</h1>
+            <p class="subtitle">
+              Stay ahead with real-time financial news and instant currency
+              conversions at your fingertips.
+            </p>
+            <div class="cta-buttons">
+              <a href="#news" class="btn btn-primary nav-link"
+                >Read Latest News</a
+              >
+              <a href="#converter" class="btn btn-secondary nav-link"
+                >Use Converter</a
+              >
             </div>
-            <div class="features container">
-                <h2>Why Choose Us?</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">&#128240;</div>
-                        <h3>Live News Feed</h3>
-                        <p>Access breaking financial news from trusted sources around the world as it happens.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">&#128178;</div>
-                        <h3>Accurate Conversions</h3>
-                        <p>Convert currencies with up-to-the-minute exchange rates for over 150+ countries.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">&#128279;</div>
-                        <h3>Seamless Experience</h3>
-                        <p>A clean, intuitive, and responsive design that works perfectly on any device.</p>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="features container">
+          <h2>Why Choose Us?</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">&#128240;</div>
+              <h3>Live News Feed</h3>
+              <p>
+                Access breaking financial news from trusted sources around the
+                world as it happens.
+              </p>
             </div>
-        </section>
-
-        <!-- News Section -->
-        <section id="news-section" class="section">
-            <div class="container">
-                <h2>Financial News</h2>
-                <div class="controls">
-                    <input type="search" id="news-search" placeholder="Search news by keyword...">
-                    <select id="news-category">
-                        <option value="business">Business</option>
-                        <option value="technology">Technology</option>
-                        <option value="entertainment">Entertainment</option>
-                        <option value="health">Health</option>
-                        <option value="science">Science</option>
-                        <option value="sports">Sports</option>
-                    </select>
-                </div>
-                <div id="news-grid-loader" class="loader"></div>
-                <div id="news-grid"></div>
+            <div class="feature-card">
+              <div class="feature-icon">&#128178;</div>
+              <h3>Accurate Conversions</h3>
+              <p>
+                Convert currencies with up-to-the-minute exchange rates for over
+                150+ countries.
+              </p>
             </div>
-        </section>
-
-        <!-- Converter Section -->
-        <section id="converter-section" class="section">
-            <div class="container">
-                <h2>Currency Converter</h2>
-                <div class="converter-wrapper">
-                    <div id="converter-loader" class="loader" style="display: none;"></div>
-                    <form class="converter-form" id="converter-form">
-                        <div class="form-group">
-                            <label for="amount">Amount</label>
-                            <input type="number" id="amount" value="1" min="0" step="any" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="from-currency">From</label>
-                            <select id="from-currency" required></select>
-                        </div>
-                        <button type="button" class="swap-button" id="swap-currencies" aria-label="Swap currencies">&#8645;</button>
-                        <div class="form-group">
-                            <label for="to-currency">To</label>
-                            <select id="to-currency" required></select>
-                        </div>
-                        <div id="conversion-result"></div>
-                    </form>
-                </div>
+            <div class="feature-card">
+              <div class="feature-icon">&#128279;</div>
+              <h3>Seamless Experience</h3>
+              <p>
+                A clean, intuitive, and responsive design that works perfectly
+                on any device.
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- About Section -->
-        <section id="about-section" class="section">
-            <div class="container">
-                <h1>About Global Finance</h1>
-                <p class="about-intro">Global Finance is a leading financial institution dedicated to providing innovative and reliable financial solutions to our clients worldwide. With a team of experienced professionals, we strive to empower individuals and businesses to achieve their financial goals.</p>
+      <!-- News Section -->
+      <section id="news-section" class="section">
+        <div class="container">
+          <h2>Financial News</h2>
+          <div class="controls">
+            <input
+              type="search"
+              id="news-search"
+              placeholder="Search news by keyword..."
+            />
+            <select id="news-category">
+              <option value="business">Business</option>
+              <option value="technology">Technology</option>
+              <option value="entertainment">Entertainment</option>
+              <option value="health">Health</option>
+              <option value="science">Science</option>
+              <option value="sports">Sports</option>
+            </select>
+          </div>
+          <div id="news-grid-loader" class="loader"></div>
+          <div id="news-grid"></div>
+        </div>
+      </section>
 
-                <h2>Our Team</h2>
-                <div id="team-members" class="team-container">
-                    </div>
+      <!-- Converter Section -->
+      <section id="converter-section" class="section">
+        <div class="container">
+          <h2>Currency Converter</h2>
+          <div class="converter-wrapper">
+            <div
+              id="converter-loader"
+              class="loader"
+              style="display: none"
+            ></div>
+            <form class="converter-form" id="converter-form">
+              <div class="form-group">
+                <label for="amount">Amount</label>
+                <input
+                  type="number"
+                  id="amount"
+                  value="1"
+                  min="0"
+                  step="any"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="from-currency">From</label>
+                <select id="from-currency" required></select>
+              </div>
+              <button
+                type="button"
+                class="swap-button"
+                id="swap-currencies"
+                aria-label="Swap currencies"
+              >
+                &#8645;
+              </button>
+              <div class="form-group">
+                <label for="to-currency">To</label>
+                <select id="to-currency" required></select>
+              </div>
+              <div id="conversion-result"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about-section" class="section">
+        <div class="container">
+          <h1>About Global Finance</h1>
+          <p class="about-intro">
+            Global Finance is a leading financial institution dedicated to
+            providing innovative and reliable financial solutions to our clients
+            worldwide. With a team of experienced professionals, we strive to
+            empower individuals and businesses to achieve their financial goals.
+          </p>
+
+          <h2>Our Team</h2>
+          <div id="team-members" class="team-container"></div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact-section" class="section">
+        <div class="container">
+          <h1>Contact Global Finance</h1>
+          <p class="contact-intro">
+            We are here to assist you. Please feel free to reach out to our key
+            personnel or for general inquiries.
+          </p>
+
+          <div class="contact-info-grid">
+            <div class="person-contact-card">
+              <h3>CEO: Jane Doe</h3>
+              <p>
+                Email:
+                <a href="mailto:jane.doe@globalfinance.com"
+                  >jane.doe@globalfinance.com</a
+                >
+              </p>
+              <p>Phone: +1 (123) 456-7890</p>
+              <p class="contact-description">
+                Oversees the company's strategic direction and overall
+                operations.
+              </p>
             </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact-section" class="section">
-            <div class="container">
-                <h1>Contact Global Finance</h1>
-                <p class="contact-intro">We are here to assist you. Please feel free to reach out to our key personnel or for general inquiries.</p>
-
-                <div class="contact-info-grid">
-                    <div class="person-contact-card">
-                        <h3>CEO: Jane Doe</h3>
-                        <p>Email: <a href="mailto:jane.doe@globalfinance.com">jane.doe@globalfinance.com</a></p>
-                        <p>Phone: +1 (123) 456-7890</p>
-                        <p class="contact-description">Oversees the company's strategic direction and overall operations.</p>
-                    </div>
-                    <div class="person-contact-card">
-                        <h3>Director: John Smith</h3>
-                        <p>Email: <a href="mailto:john.smith@globalfinance.com">john.smith@globalfinance.com</a></p>
-                        <p>Phone: +1 (987) 654-3210</p>
-                        <p class="contact-description">Manages key projects and ensures operational excellence.</p>
-                    </div>
-                </div>
-
-                <div class="general-inquiry-box">
-                    <h3>General Inquiries</h3>
-                    <p>For all other questions, partnerships, or support, please don't hesitate to contact us.</p>
-                    <p>Email: <a href="mailto:info@globalfinance.com">info@globalfinance.com</a></p>
-                    <p>Address: 123 Finance Avenue, Global City, Country</p>
-                </div>
+            <div class="person-contact-card">
+              <h3>Director: John Smith</h3>
+              <p>
+                Email:
+                <a href="mailto:john.smith@globalfinance.com"
+                  >john.smith@globalfinance.com</a
+                >
+              </p>
+              <p>Phone: +1 (987) 654-3210</p>
+              <p class="contact-description">
+                Manages key projects and ensures operational excellence.
+              </p>
             </div>
-        </section>
+          </div>
+
+          <div class="general-inquiry-box">
+            <h3>General Inquiries</h3>
+            <p>
+              For all other questions, partnerships, or support, please don't
+              hesitate to contact us.
+            </p>
+            <p>
+              Email:
+              <a href="mailto:info@globalfinance.com">info@globalfinance.com</a>
+            </p>
+            <p>Address: 123 Finance Avenue, Global City, Country</p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 👨‍💻Lehi Ita Daniel 👨‍💻 Global Finance News & Converter. All Rights Reserved.</p>
-            <p id="last-modified"></p>
-        </div>
+      <div class="container">
+        <p>
+          &copy; 2025 👨‍💻Lehi Ita Daniel 👨‍💻 Global Finance News & Converter. All
+          Rights Reserved.
+        </p>
+        <p id="last-modified"></p>
+      </div>
     </footer>
 
     <!-- The script is now loaded as a module. Vite will handle the rest. -->
     <script type="module" src="/src/js/main.js"></script>
-</body>
+  </body>
 </html>

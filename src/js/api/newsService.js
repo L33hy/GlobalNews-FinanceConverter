@@ -35,7 +35,9 @@ async function fetchNews(category = "business", query = "") {
     if (!response.ok) {
       // GNews API returns specific error messages in JSON, try to parse them
       const errorData = await response.json();
-      throw new Error(`HTTP error! Status: ${response.status} - ${errorData.errors ? errorData.errors.join(", ") : response.statusText}`);
+      throw new Error(
+        `HTTP error! Status: ${response.status} - ${errorData.errors ? errorData.errors.join(", ") : response.statusText}`,
+      );
     }
     const data = await response.json();
     displayNews(data.articles);
@@ -68,8 +70,7 @@ function displayNews(articles) {
 
     // GNews API uses 'image' property for the image URL, not 'urlToImage'
     const imageUrl =
-      article.image ||
-      "https://placehold.co/600x400/007bff/white?text=News";
+      article.image || "https://placehold.co/600x400/007bff/white?text=News";
 
     card.innerHTML = `
             <img src="${imageUrl}" alt="${article.title}" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
